@@ -53,8 +53,6 @@ Validation.password_validation()
 
 
 """Class to read data from csv """
-
-
 class read_date:
     """ initiliaze read class"""
 
