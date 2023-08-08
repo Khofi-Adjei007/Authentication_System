@@ -50,23 +50,3 @@ class signup_password_validation:
 user_password_input = input("Enter your password: ")
 Validation = signup_password_validation(user_password_input)
 Validation.password_validation()
-
-
-"""Class to read data from csv """
-class read_date:
-    """ initiliaze read class"""
-
-    def __init__(self, file_object):
-        self.file_object = file_object
-
-    """method to read csv file"""
-
-    def read_data(self):
-        with open('data_dictionary.csv', "r", newline="") as self.file_object:
-            csv_reader = csv.reader(self.file_object)
-            for row in csv_reader:
-                print("\t".join(row))
-
-
-reading = read_date('data_dictionary.csv')
-reading.read_data()
